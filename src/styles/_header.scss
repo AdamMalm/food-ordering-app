@@ -1,0 +1,41 @@
+
+header {
+    width: 100vw;
+    height: auto;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+
+    #hamburger-menu {
+        position: relative;
+        margin-left: 2.5%;
+        margin-top: 2%;
+    }
+
+    #group-order {
+        position: relative;
+        margin-top: 2.5%;
+        margin-right: 17%;
+        margin-left: 16px;
+    }
+
+    #logo {
+        position: relative;
+        margin-top: 2%;
+        margin-right: 7%;
+    }
+
+    #profile {
+        position: relative;
+        margin-top: 3%;
+        margin-left: 17%;
+        margin-right: 16px;
+    }
+
+    #shopping-cart {
+        position: relative;
+        margin-right: 2.5%;
+        margin-top: 2%;
+    }
+}

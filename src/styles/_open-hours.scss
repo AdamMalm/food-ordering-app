@@ -1,0 +1,23 @@
+$light-color: #FFFFFF;
+$font-color: #4E4E4E;
+$primary-color: #016B2E;
+$secondary-color: #31923F;
+
+.open-hours-container {
+    text-align: center;
+    color: $light-color;
+    position: absolute;
+    top: 8.8%;
+
+    .hours-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $light-color;
+        color: $font-color;
+        border-radius: 34px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+        width: 46.8vw;
+        height: 5.4vh;
+    }
+}

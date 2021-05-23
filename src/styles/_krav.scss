@@ -1,0 +1,39 @@
+$light-color: #FFFFFF;
+$font-color: #4E4E4E;
+$primary-color: #016B2E;
+$secondary-color: #31923F;
+
+#footer {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 24%;
+
+    #krav-container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        p {
+            margin-top: 4%;
+            margin-left: 2%;
+            color: $primary-color;
+            font-size: 18px;
+        }
+
+        img {
+            width: 20%;
+        }
+    }
+
+    #klarna-container {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        margin-top: 14%;
+
+        img {
+            width: 60%;
+        }
+    }
+}

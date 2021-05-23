@@ -1,0 +1,23 @@
+@import 'styles/background';
+@import 'styles/header';
+@import 'styles/open-hours';
+@import 'styles/order-type';
+@import 'styles/krav';
+@import 'styles/graycover';
+@import 'styles/autocompletetext';
+
+$light-color: #FFFFFF;
+$font-color: #4E4E4E;
+$primary-color: #016B2E;
+$secondary-color: #31923F;
+
+.App-header {
+    background-color: $light-color;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+}
