@@ -54,13 +54,18 @@
         width: 207px;
         margin-left: 20px;
         font: 400 16px $font-stack;
-        color: $light-font-color;
+        color: $font-color;
         position: relative;
 
         li {
             border-bottom: 1px solid $light-font-color;
             margin-bottom: 3%;
             padding-left: 3%;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $light-font-color;
+            }
         }
     }
 }

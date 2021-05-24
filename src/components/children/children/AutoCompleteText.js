@@ -1,5 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
-import useState from 'react'
+import { useState } from 'react'
 
 const addresses = [
     {
@@ -20,32 +20,31 @@ const addresses = [
     }
   ];
 
-const onTextChange = (e) => {
-    /* const value = e.target.value;
-    if (value.length === 0) {
-        setSuggestions([])
-    } else {
-        const regex = new RegExp(`^${value}`, 'i');
-        const suggestions = items.sort().filter(v => v.test(regex));
-        setSuggestions(() => ({ suggestions }));
-    } */
-}
-
 const AutoCompleteText = () => {
-    // const [suggestions, setSuggestions] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
 
     return (
         <div className = "search-text-container">
             <div className="bar-button-container">
-                <input onChange={onTextChange} type="text" name="search" placeholder="Skriv in din adress..." className="searchbar"/>
+                <input onChange={(e) => {
+                    setSearchTerm(e.target.value)
+                }} type="text" name="search" placeholder="Skriv in din adress..." className="searchbar" value={searchTerm}/>
                 <div className="search-button">
                     <FaArrowRight size={20} opacity={0.58}/>
-                    <p>mememem</p>
                 </div>
             </div>
             <ul>
-                {addresses.map((address) => (
-                    <li key={address.id}>{address.text}</li>
+                {addresses.filter((val) => {
+                    if (searchTerm === "") {
+                        return null
+                    } else if (val.text.toLowerCase().includes(searchTerm.toLowerCase())) {
+                        if (val.text == searchTerm) {
+                            return null
+                        }
+                        return val
+                    }
+                }).map((address) => (
+                    <li key={address.id} onClick={() => setSearchTerm(address.text)}>{address.text}</li>
                 ))}
             </ul> 
         </div>
