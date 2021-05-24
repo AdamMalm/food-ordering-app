@@ -40,6 +40,7 @@ const AutoCompleteText = () => {
                 <input onChange={onTextChange} type="text" name="search" placeholder="Skriv in din adress..." className="searchbar"/>
                 <div className="search-button">
                     <FaArrowRight size={20} opacity={0.58}/>
+                    <p>mememem</p>
                 </div>
             </div>
             <ul>
