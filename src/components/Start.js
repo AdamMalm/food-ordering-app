@@ -10,7 +10,7 @@ const Start = () => {
         <>
             <Background/>
             <Header/>
-            <OpenHours/>
+            <OpenHours text="Öppet" time="08:00 - 20:30" />
             <OrderType/>
             <Krav/>
         </>

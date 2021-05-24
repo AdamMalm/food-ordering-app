@@ -38,7 +38,7 @@ const AutoCompleteText = () => {
         <div className = "search-text-container">
             <div className="bar-button-container">
                 <input onChange={onTextChange} type="text" name="search" placeholder="Skriv in din adress..." className="searchbar"/>
-                <div className="search-button"> // Lägg till länk till nästa sida på den här
+                <div className="search-button">
                     <FaArrowRight size={20} opacity={0.58}/>
                 </div>
             </div>

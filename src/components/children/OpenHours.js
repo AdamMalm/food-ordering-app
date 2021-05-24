@@ -1,10 +1,10 @@
 
-const OpenHours = () => {
+const OpenHours = ({text,time}) => {
     return (
         <div className="open-hours-container">
-            <p>Öppet</p>
+            <p>{text}</p>
             <div className = "hours-container">
-                <p>08:00 - 20:30</p>
+                <p>{time}</p>
             </div>
         </div>
     )

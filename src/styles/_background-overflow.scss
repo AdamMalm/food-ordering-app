@@ -1,9 +1,8 @@
-.bubble-container {
+.bubble-container-overflow {
   width: 100vw;
   height: 100vh;
   top: 0;
   position: absolute;
-  overflow: hidden;
   z-index: 0;
 
   #bubble-1 {

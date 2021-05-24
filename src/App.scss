@@ -1,23 +1,25 @@
-@import 'styles/background';
-@import 'styles/header';
-@import 'styles/open-hours';
-@import 'styles/order-type';
-@import 'styles/krav';
-@import 'styles/graycover';
-@import 'styles/autocompletetext';
+@import "styles/background";
+@import "styles/background-overflow";
+@import "styles/header";
+@import "styles/open-hours";
+@import "styles/order-type";
+@import "styles/krav";
+@import "styles/graycover";
+@import "styles/autocompletetext";
+@import "styles/navbar";
 
-$light-color: #FFFFFF;
-$font-color: #4E4E4E;
-$primary-color: #016B2E;
-$secondary-color: #31923F;
+$light-color: #ffffff;
+$font-color: #4e4e4e;
+$primary-color: #016b2e;
+$secondary-color: #31923f;
 
 .App-header {
-    background-color: $light-color;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: black;
+  background-color: $light-color;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
 }
