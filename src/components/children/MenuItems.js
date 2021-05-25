@@ -3,19 +3,25 @@ import fooddata from "../../jsonconvert"
 import Category from "./children/Category"
 
 const MenuItems = () => {
+    console.log(fooddata)
     const addDishes = (categoryId) => {
         const dishes = fooddata.dishes.filter((item) => (item.fkDish_CategoryId == categoryId))
         return dishes
     }
     
     return (
-        <div className="menu-container">
-            {
-                fooddata.categories.map(item => {
-                    return (<Category category={item} dishes={addDishes(item.categoryId)}/>)
-                })
-            }
-        </div>
+        <>
+            <div className="menu-container">
+                <ul>
+                    {
+                        fooddata.categories.map(item => {
+                            return (<li key={item.categoryId}><Category category={item} dishes={addDishes(item.categoryId)}/></li>)
+                        })
+                    }
+                </ul>
+
+            </div>
+        </>  
     )
 }
 
