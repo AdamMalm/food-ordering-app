@@ -1,5 +1,9 @@
+import { useColor } from "../../contexts/ColorContext"
 
 const Background = () => {
+    const { returnPrimary } = useColor()
+    const { returnSecondary } = useColor()
+
     return (
         <div className = "bubble-container">
             <div id = "bubble-1">
@@ -18,8 +22,8 @@ const Background = () => {
                         y2="0.932"
                         gradientUnits="objectBoundingBox"
                         >
-                        <stop offset="0" stopColor="#016b2e"></stop>
-                        <stop offset="1" stopColor="#31923f" stopOpacity="0.902"></stop>
+                        <stop offset="0" stopColor={returnPrimary()}></stop>
+                        <stop offset="1" stopColor={returnSecondary()} stopOpacity="0.902"></stop>
                         </linearGradient>
                     </defs>
                     <g data-name="Group 259" transform="translate(104 227)">

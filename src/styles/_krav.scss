@@ -17,12 +17,11 @@ $secondary-color: #31923F;
         p {
             margin-top: 4%;
             margin-left: 2%;
-            color: $primary-color;
             font-size: 18px;
         }
 
-        img {
-            width: 20%;
+        svg {
+            width: 23%;
         }
     }
 
@@ -30,7 +29,7 @@ $secondary-color: #31923F;
         display: flex;
         justify-content: center;
         position: absolute;
-        margin-top: 14%;
+        margin-top: 16%;
 
         img {
             width: 60%;

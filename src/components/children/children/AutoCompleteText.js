@@ -1,5 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
+import { useHistory } from "react-router-dom"
+import { useColor } from "../../../contexts/ColorContext"
 
 const addresses = [
     {
@@ -22,6 +24,9 @@ const addresses = [
 
 const AutoCompleteText = () => {
     const [searchTerm, setSearchTerm] = useState("");
+    const history = useHistory();
+    const handleOnClick = useCallback(() => history.push("/menu"), [history]);
+    const { returnPrimary } = useColor()
 
     return (
         <div className = "search-text-container">
@@ -29,7 +34,7 @@ const AutoCompleteText = () => {
                 <input onChange={(e) => {
                     setSearchTerm(e.target.value)
                 }} type="text" name="search" placeholder="Skriv in din adress..." className="searchbar" value={searchTerm}/>
-                <div className="search-button">
+                <div className="search-button" onClick={handleOnClick} style={{background: returnPrimary()}}>
                     <FaArrowRight size={20} opacity={0.58}/>
                 </div>
             </div>
