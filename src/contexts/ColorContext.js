@@ -13,8 +13,8 @@ const ColorProvider = ({ children }) => {
         secondary: "#31923f"
         */
         
-        primary: "#2A6F97",
-        secondary: "#61A5C2",
+        primary: "#016b2e",
+        secondary: "#31923f",
         lightcolor: "#ffffff",
         fontcolor: "#4e4e4e"
     }
