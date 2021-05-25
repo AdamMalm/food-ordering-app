@@ -1,22 +1,10 @@
 .navbar-container {
-  nav {
-    overflow-x: scroll; /* 1 */
-    -webkit-overflow-scrolling: touch; /* 2 */
-  }
+  display: flex;
+  white-space: nowrap;
+  max-height: 100px;
+  overflow-x: scroll;
 
-  ul {
-    text-align: justify; /* 3 */
-    width: 30em; /* 4 */
-  }
-
-  ul:after {
-    /* 5 */
-    content: "";
-    display: inline-block;
-    width: 100%;
-  }
-
-  li {
-    display: inline-block; /* 6 */
+  .navbar-item {
+    padding: 20px;
   }
 }

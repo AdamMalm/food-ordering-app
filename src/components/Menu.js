@@ -10,7 +10,6 @@ const Menu = () => {
             <BackgroundOverflow/>
             <Header/>
             <OpenHours text="Beräknad tid för leverans" time="45 minuter" />
-            <Navbar/>
         </>
     )
 }

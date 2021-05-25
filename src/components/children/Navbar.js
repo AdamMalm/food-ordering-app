@@ -5,19 +5,33 @@ import {animateScroll as scroll } from "react-scroll";
 const navbar = () => {
     return (
         <div className="navbar-container">
-            <nav>
-                <ul>
-                    <li><Link to="">Populärt</Link></li>
-                    <li><Link to="">Pizza</Link></li>
-                    <li><Link to="">Pasta</Link></li>
-                    <li><Link to="">Sallad</Link></li>
-                    <li><Link to="">Barnmeny</Link></li>
-                    <li><Link to="">Antipasto</Link></li>
-                    <li><Link to="">Dolci</Link></li>
-                    <li><Link to="">Dryck</Link></li>
-                    <li><Link to="">Övrigt</Link></li>
-                </ul>
-            </nav>
+            <div className="navbar-item">
+                <Link to="">Populärt</Link>
+            </div>
+            <div className="navbar-item">
+                <Link to="">Pizza</Link>
+            </div>
+            <div className="navbar-item">
+                <Link to="">Pasta</Link>
+            </div>
+            <div className="navbar-item">
+                <Link to="">Sallad</Link>
+            </div>
+            <div className="navbar-item">
+                <Link to="">Barnmeny</Link>
+            </div>
+            <div className="navbar-item">
+                <Link to="">Antipasto</Link>
+            </div>
+            <div className="navbar-item">
+                <Link to="">Dolci</Link>
+            </div>
+            <div className="navbar-item">
+                <Link to="">Dryck</Link>
+            </div>
+            <div className="navbar-item">
+                <Link to="">Övrigt</Link>
+            </div>
         </div>
     )
 }

@@ -4,6 +4,7 @@
   top: 0;
   position: absolute;
   z-index: 0;
+  overflow-x: hidden !important;
 
   #bubble-1 {
     position: relative;
