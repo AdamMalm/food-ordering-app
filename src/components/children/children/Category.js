@@ -8,11 +8,13 @@ const Category = ({ category, dishes }) => {
             <div className="title-container">
                 <p>{category.name}</p>
             </div>
-            {
-                dishes.map(item => {
-                    return <FoodItem dish={item}/>
-                })
-            }
+            <ul>
+                {
+                    dishes.map(item => {
+                        return <li key={item.dishId}><FoodItem dish={item}/></li>
+                    })
+                }
+            </ul>
         </div>
     )
 }
