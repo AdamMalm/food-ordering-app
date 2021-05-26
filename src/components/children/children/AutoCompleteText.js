@@ -2,6 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { useState, useCallback } from 'react'
 import { useHistory } from "react-router-dom"
 import { useColor } from "../../../contexts/ColorContext"
+import { useSession } from "../../../contexts/SessionContext"
 
 const addresses = [
     {
@@ -27,6 +28,7 @@ const AutoCompleteText = () => {
     const history = useHistory();
     const handleOnClick = useCallback(() => history.push("/menu"), [history]);
     const { returnPrimary } = useColor()
+    const { setSessionAddress } = useSession()
 
     return (
         <div className = "search-text-container">
@@ -34,7 +36,7 @@ const AutoCompleteText = () => {
                 <input onChange={(e) => {
                     setSearchTerm(e.target.value)
                 }} type="text" name="search" placeholder="Skriv in din adress..." className="searchbar" value={searchTerm}/>
-                <div className="search-button" onClick={handleOnClick} style={{background: returnPrimary()}}>
+                <div className="search-button" onClick={() => { setSessionAddress(searchTerm); handleOnClick();}} style={{background: returnPrimary()}}>
                     <FaArrowRight size={20} opacity={0.58}/>
                 </div>
             </div>
@@ -43,7 +45,7 @@ const AutoCompleteText = () => {
                     if (searchTerm === "") {
                         return null
                     } else if (val.text.toLowerCase().includes(searchTerm.toLowerCase())) {
-                        if (val.text == searchTerm) {
+                        if (val.text === searchTerm) {
                             return null
                         }
                         return val

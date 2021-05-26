@@ -3,7 +3,7 @@ import Category from "./children/Category"
 
 const MenuItems = ({ fooddata }) => {
     const addDishes = (categoryId) => {
-        const dishes = fooddata.dishes.filter((item) => (item.fkDish_CategoryId == categoryId))
+        const dishes = fooddata.dishes.filter((item) => (item.fkDish_CategoryId === categoryId))
         return dishes
     }
     

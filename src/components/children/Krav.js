@@ -25,7 +25,7 @@ const Krav = () => {
                 <p style={{color: returnPrimary()}}>Vezzo är en KRAV-<br/>certifierad restaurang</p>
             </div>
             <div id="klarna-container">
-                <img src={klarnaIcon}/>
+                <img src={klarnaIcon} alt=""/>
             </div>
         </div>
     )

@@ -26,15 +26,15 @@ const OrderType = () => {
             <p>Välj typ av beställning</p>
             
             <div className="button-container">
-                <Link to="" style={{textDecoration: "none"}}><div className="button" style={{background: returnPrimary()}}><img src={foodIcon} id ="food"/><p>Äta här</p></div></Link>
-                <Link to="" style={{textDecoration: "none"}}><div className="button" style={{background: returnPrimary()}}><img src={bagIcon} id="bag"/><p>Avhämtning</p></div></Link>
+                <Link to="" style={{textDecoration: "none"}}><div className="button" style={{background: returnPrimary()}}><img src={foodIcon} id ="food" alt=""/><p>Äta här</p></div></Link>
+                <Link to="" style={{textDecoration: "none"}}><div className="button" style={{background: returnPrimary()}}><img src={bagIcon} id="bag" alt=""/><p>Avhämtning</p></div></Link>
                 <div 
                     className={isClicked ? "search" : "button"} 
                     onClick={toggleSearchButton}
                     style={{background: returnPrimary()}}
                 >
                     
-                    <img src={deliveryIcon} id="delivery"/>
+                    <img src={deliveryIcon} id="delivery" alt=""/>
                     <div className="searchbar">
                         <AutoCompleteText/>
                     </div>
