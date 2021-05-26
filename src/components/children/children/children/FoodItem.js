@@ -4,7 +4,7 @@ const FoodItem = ({ dish }) => {
     return (
         <div className="food-container">
             <div className="image-container">
-                <img src={dish.fileName} placeholder="image"/>
+                <img src={"https://order.vezzo.se/" + dish.fileName} placeholder="image"/>
             </div>
             <div className="text-container">
                 <div className="title">
@@ -16,7 +16,6 @@ const FoodItem = ({ dish }) => {
                 <div className="description">
                     <p>{dish.description} kr</p>
                 </div>
-
             </div>
         </div>
     )
