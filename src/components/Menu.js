@@ -4,18 +4,19 @@ import Header from './children/Header';
 import OpenHours from './children/OpenHours';
 import Navbar from './children/Navbar';
 import MenuItems from "./children/MenuItems";
-import fooddata from "../jsonconvert";
+import { useSession } from "../contexts/SessionContext";
 
 
 const Menu = () => {
+    const { fooddata, orderTime } = useSession()
+
     return (
         <> 
             <Header/>
-            <OpenHours text="Beräknad tid för leverans" time="45 minuter" />
+            <OpenHours text="Beräknad tid för leverans" time={orderTime + " minuter"} />
             <Navbar fooddata={fooddata}/>
             <MenuItems fooddata={fooddata}/>
             <Background height={"auto"}/>
-            
         </>
     )
 }

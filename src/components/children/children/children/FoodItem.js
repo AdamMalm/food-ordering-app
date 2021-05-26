@@ -1,8 +1,14 @@
-import React from 'react'
+import { useCallback } from 'react'
+import { useHistory } from "react-router-dom"
+import { useSession } from "../../../../contexts/SessionContext"
 
 const FoodItem = ({ dish }) => {
+    const history = useHistory();
+    const handleOnClick = useCallback(() => history.push("/itempage"), [history]);
+    const { setActiveItem } = useSession()
+
     return (
-        <div className="food-container">
+        <div className="food-container" onClick={() => { setActiveItem(dish); handleOnClick();}}>
             <div className="image-container">
                 <img src={"https://order.vezzo.se/" + dish.fileName} placeholder="image"/>
             </div>
