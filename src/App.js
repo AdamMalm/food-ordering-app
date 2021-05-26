@@ -6,9 +6,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { ColorProvider } from "./contexts/ColorContext"
 import { SessionProvider } from "./contexts/SessionContext"
 
-{ /* kolla upp om context och provider kopplat till att bestämma en 
-     global theme på sidan */}
-
 function App() {
   return (
     <div className="App">

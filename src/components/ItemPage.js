@@ -1,5 +1,4 @@
 import React from 'react';
-import Background from './children/Background';
 import Header from './children/Header';
 import OpenHours from './children/OpenHours';
 import { useSession } from "../contexts/SessionContext";

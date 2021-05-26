@@ -45,7 +45,7 @@ const AutoCompleteText = () => {
                     if (searchTerm === "") {
                         return null
                     } else if (val.text.toLowerCase().includes(searchTerm.toLowerCase())) {
-                        if (val.text == searchTerm) {
+                        if (val.text === searchTerm) {
                             return null
                         }
                         return val

@@ -10,7 +10,7 @@ const FoodItem = ({ dish }) => {
     return (
         <div className="food-container" onClick={() => { setActiveItem(dish); handleOnClick();}}>
             <div className="image-container">
-                <img src={"https://order.vezzo.se/" + dish.fileName} placeholder="image"/>
+                <img src={"https://order.vezzo.se/" + dish.fileName} alt=""/>
             </div>
             <div className="text-container">
                 <div className="title">
