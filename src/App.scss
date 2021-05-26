@@ -1,5 +1,4 @@
 @import "styles/background";
-@import "styles/background-overflow";
 @import "styles/header";
 @import "styles/open-hours";
 @import "styles/order-type";
@@ -16,11 +15,7 @@ $secondary-color: #31923f;
 
 .App-header {
   background-color: $light-color;
-<<<<<<< HEAD
-  min-height: 100vh;
-=======
   height: auto;
->>>>>>> 7a0236f5318347362a79e3b693a3edb6df1ff76a
   display: flex;
   flex-direction: column;
   align-items: center;

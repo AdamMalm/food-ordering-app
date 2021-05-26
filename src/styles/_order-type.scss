@@ -16,7 +16,6 @@ $font-stack: 'Poppins', sans-serif;
     height: 375px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
     z-index: 1;
-    position: absolute;
     top: 23.2%;
     color: $font-color;
     
@@ -44,7 +43,6 @@ $font-stack: 'Poppins', sans-serif;
         }
 
         img {
-            position: absolute;
             left: 16%;
         }
 

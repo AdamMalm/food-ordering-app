@@ -1,11 +1,11 @@
 import { useColor } from "../../contexts/ColorContext"
 
-const Background = () => {
+const Background = ({ height }) => {
     const { returnPrimary } = useColor()
     const { returnSecondary } = useColor()
 
     return (
-        <div className = "bubble-container">
+        <div className = "bubble-container" style={{height}}>
             <div id = "bubble-1">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
