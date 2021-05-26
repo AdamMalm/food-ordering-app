@@ -8,4 +8,37 @@ header {
   div {
     margin: 10px;
   }
+  #hamburger-menu {
+    svg {
+      height: 25px;
+      width: auto;
+    }
+  }
+  #group-order {
+    margin-left: -60px;
+    svg {
+      height: 25px;
+      width: auto;
+    }
+  }
+  #logo {
+    margin-left: -20px;
+    svg {
+      height: 25px;
+      width: auto;
+    }
+  }
+  #profile {
+    margin-right: -60px;
+    svg {
+      height: 25px;
+      width: auto;
+    }
+  }
+  #shopping-cart {
+    svg {
+      height: 25px;
+      width: auto;
+    }
+  }
 }

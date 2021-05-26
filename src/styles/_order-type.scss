@@ -1,95 +1,86 @@
-$light-color: #FFFFFF;
-$font-color: #4E4E4E;
-$light-font-color: #C9C9C9;
-$primary-color: #016B2E;
-$secondary-color: #31923F;
-$font-stack: 'Poppins', sans-serif;
+$light-color: #ffffff;
+$font-color: #4e4e4e;
+$light-font-color: #c9c9c9;
+$primary-color: #016b2e;
+$secondary-color: #31923f;
+$font-stack: "Poppins", sans-serif;
 
 .order-type-container {
-    display: grid;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $light-color;
+  border-radius: 34px;
+  width: 75.703%;
+  height: 375px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  z-index: 1;
+  top: 23.2%;
+  color: $font-color;
+  margin-top: 14%;
+
+  p {
+    margin-top: 6%;
+    margin-bottom: 2%;
+    font-size: 20px;
+  }
+
+  .button {
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: $light-color;
+    width: 250px;
+    height: 68px;
+    font-size: 20px;
+    margin-bottom: 10.4%;
     border-radius: 34px;
-    width: 75.703%;
-    height: 375px;
+    color: $light-color;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
-    z-index: 1;
-    top: 23.2%;
-    color: $font-color;
-    
+
     p {
-        margin-top: 6%;
-        margin-bottom: 2%;
-        font-size: 20px;
+      padding: 0;
+      margin: 25px;
     }
 
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 250px;
-        height: 68px;
-        font-size: 20px;
-        margin-bottom: 10.4%;
-        border-radius: 34px;
-        color: $light-color;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
-
-        p {
-            padding: 0;
-            margin: 0;
-        }
-
-        img {
-            left: 16%;
-        }
-
-        #food {
-            width: 10%;
-            top: 26%;
-        }
-
-        #bag {
-            width: 10%;
-            top: 51%;
-        }
-
-        #delivery {
-            width: 12%;
-            top: 76%;
-            left: 15%;
-        }
-
-        .searchbar {
-            display: none;
-        }
-
-        .search-button {
-            display: none;
-        }
+    img {
+      height: 30px;
+      width: auto;
     }
 
-    .search {
-        display: flex;
-        align-items: flex-start;
-        width: 250px;
-        height: 68px;
-        font-size: 20px;
-        margin-bottom: 10.4%;
-        border-radius: 34px;
-        color: $light-color;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
-        position: relative;
-        z-index: 10;
-
-        p {
-            display: none;
-        }
-
-        img {
-            display: none;
-        }
+    #food {
+      margin-left: -25px;
+      margin-right: 15px;
     }
+
+    .searchbar {
+      display: none;
+    }
+
+    .search-button {
+      display: none;
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: flex-start;
+    width: 250px;
+    height: 68px;
+    font-size: 20px;
+    margin-bottom: 10.4%;
+    border-radius: 34px;
+    color: $light-color;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+    position: relative;
+    z-index: 10;
+
+    p {
+      display: none;
+    }
+
+    img {
+      display: none;
+    }
+  }
 }
