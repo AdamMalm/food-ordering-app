@@ -1,10 +1,25 @@
 .navbar-container {
-  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
-  max-height: 100px;
-  overflow-x: scroll;
+  position: absolute;
+  width: 100vw;
+  height: 70px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
 
-  .navbar-item {
-    padding: 20px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+
+    li {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
   }
 }

@@ -1,9 +1,7 @@
 import React from 'react'
-import fooddata from "../../jsonconvert"
 import Category from "./children/Category"
 
-const MenuItems = () => {
-    console.log(fooddata)
+const MenuItems = ({ fooddata }) => {
     const addDishes = (categoryId) => {
         const dishes = fooddata.dishes.filter((item) => (item.fkDish_CategoryId == categoryId))
         return dishes
@@ -19,7 +17,6 @@ const MenuItems = () => {
                         })
                     }
                 </ul>
-
             </div>
         </>  
     )
