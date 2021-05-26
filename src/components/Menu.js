@@ -7,12 +7,11 @@ import MenuItems from "./children/MenuItems"
 
 const Menu = () => {
     return (
-        <>
-            <BackgroundOverflow/>
+        <> 
             <Header/>
             <OpenHours text="Beräknad tid för leverans" time="45 minuter" />
+            <BackgroundOverflow/>
             
-            <MenuItems/>
         </>
     )
 }

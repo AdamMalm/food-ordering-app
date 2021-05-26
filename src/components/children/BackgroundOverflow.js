@@ -1,4 +1,6 @@
 import { useColor } from "../../contexts/ColorContext"
+import Header from "./Header"
+
 
 const BackgroundOverflow = () => {
     const { returnPrimary } = useColor()
@@ -9,8 +11,8 @@ const BackgroundOverflow = () => {
             <div id = "bubble-1">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="127.8%"
-                height="100%"
+                width="127.8vw"
+                height="100vh"
                 viewBox="0 0 547 534"
                 >
                     <defs>
@@ -41,8 +43,8 @@ const BackgroundOverflow = () => {
             <div id = "bubble-2">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="159.2%"
-                height="100%"
+                width="159.2vw"
+                height="100vh"
                 viewBox="0 0 787.36 721.71"
                 >
                     <defs>
