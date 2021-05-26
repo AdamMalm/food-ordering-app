@@ -6,8 +6,7 @@ $secondary-color: #31923f;
 .open-hours-container {
   text-align: center;
   color: $light-color;
-  position: absolute;
-  top: 8.8%;
+  z-index: 1;
 
   .hours-container {
     display: flex;

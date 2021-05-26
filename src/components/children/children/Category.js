@@ -6,7 +6,7 @@ const Category = ({ category, dishes }) => {
     return (
         <div className="category-container">
             <div className="title-container">
-                <p style={{fontSize: "20px"}}>{category.name}</p>
+                <p>{category.name}</p>
             </div>
             <ul>
                 {

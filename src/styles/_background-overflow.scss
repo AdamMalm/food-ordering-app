@@ -1,20 +1,14 @@
 .bubble-container-overflow {
+  height: auto;
   width: 100vw;
-  height: 100vh;
-  top: 0;
-  position: absolute;
-  z-index: 0;
-  overflow-x: hidden !important;
 
   #bubble-1 {
-    position: relative;
-    left: -24.5%;
-    margin-top: -54.5%;
+    margin-top: -135%;
+    margin-left: -25%;
   }
 
   #bubble-2 {
-    position: relative;
-    left: -20%;
-    margin-top: 106%;
+    margin-top: 17.5%;
+    margin-left: -20%;
   }
 }

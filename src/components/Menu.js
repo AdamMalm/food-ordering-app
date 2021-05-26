@@ -9,12 +9,13 @@ import fooddata from "../jsonconvert";
 
 const Menu = () => {
     return (
-        <>
-            <BackgroundOverflow/>
+        <> 
             <Header/>
             <OpenHours text="Beräknad tid för leverans" time="45 minuter" />
             <Navbar fooddata={fooddata}/>
             {/* <MenuItems fooddata={fooddata}/> */}
+            <BackgroundOverflow/>
+            
         </>
     )
 }
