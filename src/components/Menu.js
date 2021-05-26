@@ -13,7 +13,7 @@ const Menu = () => {
             <Header/>
             <OpenHours text="Beräknad tid för leverans" time="45 minuter" />
             <Navbar fooddata={fooddata}/>
-            {/* <MenuItems fooddata={fooddata}/> */}
+            <MenuItems fooddata={fooddata}/>
             <Background height={"auto"}/>
             
         </>
