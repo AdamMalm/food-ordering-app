@@ -1,0 +1,21 @@
+
+.extra-items-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100vw;
+    height: 90px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    z-index: 1;
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin-top: 10px;
+    }
+}

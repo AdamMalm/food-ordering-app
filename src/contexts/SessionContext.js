@@ -11,10 +11,11 @@ const SessionProvider = ({ children }) => {
     const [sessionAddress, setSessionAddress] = useState("");
     const [orderTime, setOrderTime] = useState(45);
     const [shoppingCart, setShoppingCart] = useState([]);
-    // Gör så att shopping cart inte skriver över med "setShoppingCart"
+    const [totalPrice, setTotalPrice] = useState(0)
     const [activeItem, setActiveItem] = useState([])
 
     const addToShoppingCart = (array) => {
+        setTotalPrice(totalPrice + array.price)
         shoppingCart.push(array)
     }
     
@@ -29,7 +30,9 @@ const SessionProvider = ({ children }) => {
         setShoppingCart,
         addToShoppingCart,
         activeItem,
-        setActiveItem
+        setActiveItem,
+        totalPrice,
+        setTotalPrice
     }
 
     return (

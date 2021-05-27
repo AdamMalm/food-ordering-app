@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './children/Header';
+import HeaderSecondary from './children/HeaderSecondary';
 import OpenHours from './children/OpenHours';
 import { useSession } from "../contexts/SessionContext";
 
@@ -8,9 +8,8 @@ const ItemPage = () => {
 
     return (
         <>
-            <Header/>
+            <HeaderSecondary/>
             <OpenHours text="Beräknad tid för leverans" time={orderTime + " minuter"} />
-            {console.log(activeItem)}
             <div onClick={() => addToShoppingCart(activeItem)} style={{background: "red"}}>
                 <p>memememe</p>
             </div>

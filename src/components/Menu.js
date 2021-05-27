@@ -1,6 +1,5 @@
-import React from 'react';
 import Background from './children/Background';
-import Header from './children/Header';
+import HeaderSecondary from './children/HeaderSecondary';
 import OpenHours from './children/OpenHours';
 import Navbar from './children/Navbar';
 import MenuItems from "./children/MenuItems";
@@ -12,7 +11,7 @@ const Menu = () => {
 
     return (
         <> 
-            <Header/>
+            <HeaderSecondary/>
             <OpenHours text="Beräknad tid för leverans" time={orderTime + " minuter"} />
             <Navbar fooddata={fooddata}/>
             <MenuItems fooddata={fooddata}/>
