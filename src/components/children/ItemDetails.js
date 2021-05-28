@@ -1,13 +1,15 @@
-import React from 'react';
 import { useSession } from "../../contexts/SessionContext";
-import OpenHours from '../children/OpenHours';
 import { useColor } from "../../contexts/ColorContext";
+import { useHistory } from "react-router-dom";
+import { useCallback } from 'react'
 
 
 
 const ItemDetails = () => {
     const { activeItem, orderTime, addToShoppingCart, shoppingCart } = useSession();
     const { returnPrimary } = useColor();
+    const history = useHistory();
+    const handleOnClick = useCallback(() => history.push("/menu"), [history]);
 
     return (
         
@@ -104,7 +106,7 @@ const ItemDetails = () => {
                         <p>Beräknad tid för leverans</p>
                         <p>{orderTime} minuter</p>
                     </div>
-                    <div className="add-to-cart" style={{background:returnPrimary()}} onClick={() => addToShoppingCart(activeItem)}>
+                    <div className="add-to-cart" style={{background:returnPrimary()}} onClick={() => { addToShoppingCart(activeItem); handleOnClick();}}>
                         <p>Lägg till i varukorg</p>
                     </div>
                 </div>

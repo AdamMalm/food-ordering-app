@@ -12,7 +12,7 @@ const ShoppingCart = () => {
             <Cart/>
             <ExtraItems/>
             <ContactInformation/>
-            <Background height={"150vh"}/>
+            <Background height={"140vh"}/>
         </>
     )
 }

@@ -13,7 +13,7 @@ const ItemPage = () => {
             <HeaderSecondary/>
             <OpenHours text="Beräknad tid för leverans" time={orderTime + " minuter"} />
             <ItemDetails/>
-            <Background height={"auto"}/>
+            <Background height={"150vh"}/>
         </>
     )
 }
