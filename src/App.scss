@@ -10,12 +10,19 @@
 @import "styles/menuitems";
 @import "styles/category";
 @import "styles/fooditem";
+@import "styles/cart";
+@import "styles/extraitems";
+@import "styles/checkoutitem";
+@import "styles/contactinformation";
+@import "styles/headersecondary";
 @import "styles/item-details";
 
 $light-color: #ffffff;
 $font-color: #4e4e4e;
+$light-font-color: #c9c9c9;
 $primary-color: #016b2e;
 $secondary-color: #31923f;
+$font-stack: "Poppins", sans-serif;
 
 .App-header {
   background-color: $light-color;

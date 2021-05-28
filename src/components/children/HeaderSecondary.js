@@ -1,31 +1,18 @@
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 
-const Header = () => {
+const HeaderSecondary = () => {
+    const history = useHistory()
+
     return (
         <header>
             {/* Gör en funktion för att det ska skifta
             mellan hamburgermeny och tillbaka knapp */}
-            <div id = "hamburger-menu">
-                <Link to="">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="31.471"
-                    height="25.177"
-                    viewBox="0 0 31.471 25.177"
-                    >
-                        <g
-                            data-name="noun_hamburger menu_2178920"
-                            transform="translate(55 71.359)"
-                        >
-                            <path
-                            fill="#fff"
-                            d="M1.139 3.441h-.016a1.145 1.145 0 000 2.289h29.225a1.145 1.145 0 000-2.289H1.139zm0 11.444h-.016a1.145 1.145 0 000 2.289h29.225a1.145 1.145 0 000-2.289H1.139zm0 11.444h-.016a1.145 1.145 0 000 2.289h29.225a1.145 1.145 0 000-2.289H1.139z"
-                            data-name="Path 62"
-                            transform="translate(-55 -74.8)"
-                            ></path>
-                        </g>
-                    </svg>
-                </Link>
+            <div id = "back" onClick={() => history.goBack()}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14.062" height="23.121" viewBox="0 0 14.062 23.121">
+                    <g id="noun_back_1973349" transform="translate(-5.121 -4.632)">
+                        <path id="Path_104" data-name="Path 104" d="M19.736,3.978a1.441,1.441,0,0,0-1.013.386L7.594,14.453a1.441,1.441,0,0,0,0,2.136l11.131,10.09a1.441,1.441,0,1,0,1.933-2.133L10.71,15.522,20.659,6.5a1.441,1.441,0,0,0-.923-2.522Z" transform="translate(-2 0.654)" fill="#fff"/>
+                    </g>
+                </svg>
             </div>
             <div id = "group-order">
                 <Link to="">
@@ -131,4 +118,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default HeaderSecondary
